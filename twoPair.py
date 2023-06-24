@@ -1,12 +1,12 @@
-arr=[1, 2, 3, 2, 4, 5, 2]
-
+arr = [1, 2, 3, 2, 4, 5, 2]
 
 def pairs(array, target):
-   for i in range(len(array)):
-       for j in range(i+1,len(array)):
+
+    for i in range(len(array)):
+         for j in range(i+1, len(array)):
             if array[i] == array[j]:
                 continue
-
             elif array[i]+array[j] == target:
-               print(f"{i} {j}")
+                print(f"{i} {j}")
+
 pairs(arr,6)
