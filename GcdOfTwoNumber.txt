@@ -1,0 +1,31 @@
+def gcd(a, b):
+ 
+    if (a == 0):
+        return b
+
+    if (b == 0):
+        return a
+ 
+    if (a == b):
+        return a
+
+    if (a > b):
+        return gcd(a-b, b)
+    return gcd(a, b-a)
+ 
+a = 98
+b = 56
+
+if(gcd(a, b)):
+    print('GCD of', a, 'and', b, 'is', gcd(a, b))
+else:
+    print('not found')
+
+
+# ========================using Math operater==========================
+
+import math
+
+print("The gcd of 60 and 48 is : ", end="")
+
+print(math.gcd(60, 48))
