@@ -1,0 +1,10 @@
+def productOfArray(arr):
+    if len(arr) == 0:
+        return 0
+    if len(arr) == 1:
+        return arr[0]
+    else:
+        return arr[len(arr)-1] * productOfArray(arr[:len(arr)-1])
+                                    #returns the list upto (length-1)
+    
+print(productOfArray([9,1,3,4,5]))
