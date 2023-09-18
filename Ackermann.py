@@ -9,7 +9,7 @@ def ackermann(m, n, indentation=None):
         return ackermann(m - 1, 1, indentation + 1)
     elif m > 0 and n > 0:
 
-        return ackermann(m - 1, ackermann(m, n - 1, indentation + 1), indentation + 1)
+     ackermann(m, n - 1, indentation + 1), indentation + 1)
 
 print('Starting with m = 1, n = 1:')
 print(ackermann(1, 1))
